@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure Checkout</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f6f9;
+}
+
+.box{
+    width:360px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    margin-top:40px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.slider{
+    overflow:hidden;
+    white-space:nowrap;
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.slide-track{
+    display:inline-block;
+    animation: scroll 12s linear infinite;
+    font-size:28px;
+}
+
+.slide-track i{
+    margin:0 15px;
+}
+
+@keyframes scroll{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+}
+
+table{
+    width:100%;
+    font-size:14px;
+    text-align:left;
+}
+
+.total{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.paybtn{
+    width:100%;
+    padding:15px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:18px;
+    margin-top:10px;
+}
+
+.secure{
+    font-size:12px;
+    color:gray;
+    margin-top:10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h2>Secure Checkout</h2>
+
+<div class="slider">
+<div class="slide-track">
+<i class="fa-brands fa-google-pay"></i>
+<i class="fa-brands fa-cc-visa"></i>
+<i class="fa-brands fa-cc-mastercard"></i>
+<i class="fa-solid fa-credit-card"></i>
+<i class="fa-solid fa-money-bill"></i>
+
+<i class="fa-brands fa-google-pay"></i>
+<i class="fa-brands fa-cc-visa"></i>
+<i class="fa-brands fa-cc-mastercard"></i>
+<i class="fa-solid fa-credit-card"></i>
+<i class="fa-solid fa-money-bill"></i>
+</div>
+</div>
+
+<h3>Order Summary</h3>
+
+<table>
+<tr><td>Base Price</td><td align="right">₹650</td></tr>
+<tr><td>GST</td><td align="right">₹9</td></tr>
+<tr><td>Platform Fee</td><td align="right">₹5</td></tr>
+<tr><td>Processing Fee</td><td align="right">₹5</td></tr>
+</table>
+
+<hr>
+
+<table>
+<tr><td>Subtotal</td><td align="right">₹669</td></tr>
+<tr><td>Discount</td><td align="right">₹0</td></tr>
+</table>
+
+<hr>
+
+<div class="total">
+<b>Total: ₹669</b>
+</div>
+
+<a href="upi://pay?pa=raifulhaque953@oksbi&pn=Raiful%20Haque&am=669&cu=INR">
+<button class="paybtn">Pay Now</button>
+</a>
+
+<div class="secure">
+🔒 Secure Payment <br>
+⚡ Instant Access <br>
+💳 All Payment Methods Accepted
+</div>
+
+</div>
+
+</body>
+</html>
