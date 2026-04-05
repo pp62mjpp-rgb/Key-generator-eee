@@ -1,0 +1,7 @@
+flask
+aiohttp
+pycryptodome
+protobuf
+protobuf-decoder
+pytz
+cfonts
