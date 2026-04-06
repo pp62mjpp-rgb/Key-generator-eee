@@ -5,3 +5,5 @@ protobuf
 protobuf-decoder
 pytz
 cfonts
+requests
+gunicorn
